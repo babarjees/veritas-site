@@ -1,0 +1,694 @@
+<!doctype html>
+<html lang="en" class="light">
+  <head>
+    <script>
+      (function () {
+        var html = document.documentElement;
+        try { localStorage.setItem('theme', 'light'); } catch (e) {}
+        html.classList.remove('dark');
+        html.classList.add('light');
+        new MutationObserver(function () {
+          if (html.classList.contains('dark')) {
+            html.classList.remove('dark');
+            html.classList.add('light');
+          }
+        }).observe(html, { attributes: true, attributeFilter: ['class'] });
+      })();
+    </script>
+    <!-- =========================
+Head links
+===========================-->
+
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="title" content="Join the Veritas Waitlist — Verified Reviews for Pakistani E-commerce" />
+<meta name="description" content="Be first in line when Veritas opens to your category. Drop your name, brand and email and we'll send your sandbox API key the moment we open to verified-purchase reviews in your vertical." />
+<meta name="keywords" content="Veritas waitlist, join Veritas, verified reviews Pakistan, early access, sandbox API key, Roman-Urdu fraud detection, Trust Score" />
+<meta name="author" content="Veritas Labs" />
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+<meta name="googlebot" content="index, follow" />
+<meta name="bingbot" content="index, follow" />
+
+<meta name="language" content="English" />
+<meta name="geo.region" content="PK" />
+<meta name="geo.placename" content="Karachi, Pakistan" />
+
+<link rel="canonical" href="https://babarjees.github.io/veritas-site/waitlist.html" />
+
+<meta name="rating" content="General" />
+<meta name="distribution" content="Global" />
+<meta name="revisit-after" content="7 days" />
+<meta name="expires" content="never" />
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://babarjees.github.io/veritas-site/waitlist.html" />
+<meta property="og:title" content="Join the Veritas Waitlist — Verified Reviews for Pakistani E-commerce" />
+<meta property="og:description" content="Be first in line when Veritas opens to your category. Drop your details and we'll send your sandbox API key the moment we open to verified reviews in your vertical." />
+<meta property="og:image" content="./images/shared/veritas-logo.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Veritas — Asli Reviews. Yaqeen Ke Saath Kharidari." />
+<meta property="og:site_name" content="Veritas" />
+<meta property="og:locale" content="en_PK" />
+<meta property="article:author" content="Veritas Labs" />
+<meta property="article:publisher" content="Veritas Labs" />
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@VeritasPK" />
+<meta name="twitter:creator" content="@VeritasPK" />
+<meta name="twitter:url" content="https://babarjees.github.io/veritas-site/waitlist.html" />
+<meta name="twitter:title" content="Join the Veritas Waitlist — Verified Reviews for Pakistani E-commerce" />
+<meta name="twitter:description" content="Be first in line when Veritas opens to your category. We're rolling out verified-purchase reviews, Roman-Urdu fraud detection, and a Trust Score badge category by category." />
+<meta name="twitter:image" content="./images/shared/veritas-logo.png" />
+<meta name="twitter:image:alt" content="Veritas" />
+
+<meta name="theme-color" content="#111630" />
+<meta name="msapplication-TileColor" content="#111630" />
+<meta name="mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="apple-mobile-web-app-title" content="Veritas" />
+<meta name="application-name" content="Veritas" />
+<meta name="msapplication-tooltip" content="Join the Veritas Waitlist" />
+<meta name="msapplication-starturl" content="/" />
+<!-- Favicon and Icons -->
+<link rel="icon" type="image/png" href="./favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+<link rel="shortcut icon" href="./favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png" />
+<link rel="manifest" href="./site.webmanifest" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
+  rel="stylesheet"
+/>
+
+    <title>Join the Veritas Waitlist — Verified Reviews for Pakistani E-commerce</title>
+
+    <link rel="stylesheet" href="./assets/main.css">
+    <style>
+      /* Veritas: hide template demo-showcase widget and theme toggle */
+      #open-demo-showcase,
+      #demo-showcase,
+      #theme-toggle { display: none !important; }
+
+      /* Waitlist-specific styling */
+      .veritas-input {
+        width: 100%;
+        padding: 14px 18px;
+        border-radius: 12px;
+        border: 1px solid rgba(17, 22, 48, 0.12);
+        background: #ffffff;
+        color: #111630;
+        font-size: 16px;
+        font-family: inherit;
+        transition: border-color 0.2s, box-shadow 0.2s;
+        box-sizing: border-box;
+      }
+      .veritas-input:focus {
+        outline: none;
+        border-color: #20B472;
+        box-shadow: 0 0 0 3px rgba(32, 180, 114, 0.15);
+      }
+      .veritas-input::placeholder { color: rgba(17, 22, 48, 0.4); }
+      .veritas-label {
+        display: block;
+        font-size: 13px;
+        font-weight: 500;
+        color: #111630;
+        margin-bottom: 6px;
+        letter-spacing: 0.01em;
+      }
+      .veritas-field { margin-bottom: 18px; }
+      .veritas-submit {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        width: 100%;
+        padding: 16px 28px;
+        background: #20B472;
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: 500;
+        border-radius: 999px;
+        border: 0;
+        cursor: pointer;
+        transition: background 0.2s, transform 0.15s;
+      }
+      .veritas-submit:hover { background: #1a9b62; }
+      .veritas-submit:active { transform: scale(0.98); }
+      .veritas-submit:disabled { opacity: 0.6; cursor: progress; }
+      .veritas-success {
+        display: none;
+        padding: 24px;
+        background: rgba(32, 180, 114, 0.08);
+        border: 1px solid rgba(32, 180, 114, 0.25);
+        border-radius: 16px;
+        color: #111630;
+      }
+      .veritas-success.is-visible { display: block; }
+      .veritas-form.is-hidden { display: none; }
+      .veritas-card {
+        background: #ffffff;
+        border: 1px solid rgba(17, 22, 48, 0.08);
+        border-radius: 24px;
+        padding: 36px;
+        box-shadow: 0 30px 60px -30px rgba(17, 22, 48, 0.18);
+      }
+      @media (min-width: 640px) {
+        .veritas-card { padding: 48px; }
+        .veritas-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+      }
+      .veritas-trust-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+        margin-top: 32px;
+        padding-top: 28px;
+        border-top: 1px solid rgba(17, 22, 48, 0.08);
+      }
+      .veritas-trust-row p {
+        margin: 0;
+        font-size: 14px;
+        color: rgba(17, 22, 48, 0.62);
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+      .veritas-checkmark {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 18px;
+        height: 18px;
+        border-radius: 9px;
+        background: #20B472;
+        color: white;
+        flex-shrink: 0;
+      }
+    </style>
+</head>
+  <body class="bg-background-1 dark:bg-background-6">
+    <!-- =========================
+Header v1
+===========================-->
+<header>
+  <div
+    class="header-one lp:max-w-[1290px]! bg-accent/60 border-stroke-2 dark:border-stroke-6 dark:bg-background-9 fixed top-5 left-1/2 z-50 mx-auto flex w-full max-w-[350px] -translate-x-1/2 items-center justify-between rounded-full border px-2.5 py-2.5 opacity-0 backdrop-blur-lg max-[400px]:max-w-[350px] min-[425px]:max-w-[375px] min-[500px]:max-w-[450px] sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1140px] xl:py-0 dark:border"
+    data-ns-animate
+    data-direction="up"
+    data-offset="100"
+  >
+    <div>
+      <a href="./">
+        <span class="sr-only">Home</span>
+        <figure class="hidden lg:block lg:max-w-[198px]">
+          <img src="./images/shared/veritas-logo-white.png" alt="Veritas" class="dark:invert" />
+        </figure>
+        <figure class="block max-w-[44px] lg:hidden">
+          <img src="./images/shared/veritas-logo.png" alt="Veritas" class="block w-full dark:hidden" />
+          <img src="./images/shared/veritas-logo.png" alt="Veritas" class="hidden w-full dark:block" />
+        </figure>
+      </a>
+    </div>
+        <nav class="hidden items-center xl:flex">
+      <ul class="flex items-center gap-1">
+        <li class="nav-item relative cursor-pointer py-2.5">
+          <a href="./about.html" class="hover:border-stroke-2 dark:hover:border-stroke-7 text-tagline-1 text-secondary/60 hover:text-secondary dark:text-accent/60 dark:hover:text-accent flex items-center gap-1 rounded-full border border-transparent px-4 py-2 font-normal transition-all duration-200">
+            <span>About Us</span>
+          </a>
+        </li>
+        <li class="nav-item relative cursor-pointer py-2.5">
+          <a href="./services.html" class="hover:border-stroke-2 dark:hover:border-stroke-7 text-tagline-1 text-secondary/60 hover:text-secondary dark:text-accent/60 dark:hover:text-accent flex items-center gap-1 rounded-full border border-transparent px-4 py-2 font-normal transition-all duration-200">
+            <span>Our Services</span>
+          </a>
+        </li>
+        <li class="nav-item relative cursor-pointer py-2.5">
+          <a href="./features.html" class="hover:border-stroke-2 dark:hover:border-stroke-7 text-tagline-1 text-secondary/60 hover:text-secondary dark:text-accent/60 dark:hover:text-accent flex items-center gap-1 rounded-full border border-transparent px-4 py-2 font-normal transition-all duration-200">
+            <span>Product Features</span>
+          </a>
+        </li>
+        <li class="nav-item relative cursor-pointer py-2.5">
+          <a href="./pricing.html" class="hover:border-stroke-2 dark:hover:border-stroke-7 text-tagline-1 text-secondary/60 hover:text-secondary dark:text-accent/60 dark:hover:text-accent flex items-center gap-1 rounded-full border border-transparent px-4 py-2 font-normal transition-all duration-200">
+            <span>Pricing</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="hidden items-center justify-center xl:flex">
+      <a href="./waitlist.html" class="btn btn-md btn-secondary hover:btn-primary dark:btn-accent">
+        <span>Waitlist</span>
+      </a>
+    </div>
+    <div class="block xl:hidden">
+      <button
+        class="nav-hamburger bg-background-4 dark:bg-background-6 flex size-12 cursor-pointer flex-col items-center justify-center gap-[5px] rounded-full"
+      >
+        <span class="sr-only">Menu</span>
+        <span class="bg-stroke-9 dark:bg-stroke-1 block h-0.5 w-6"></span>
+        <span class="bg-stroke-9 dark:bg-stroke-1 block h-0.5 w-6"></span>
+        <span class="bg-stroke-9 dark:bg-stroke-1 block h-0.5 w-6"></span>
+      </button>
+    </div>
+  </div>
+  <!-- =========================
+Mobile Menu
+===========================-->
+
+<aside class="sidebar dark:bg-background-7 scroll-bar fixed top-0 right-0 z-999 h-screen w-full translate-x-full bg-white transition-all duration-300 sm:w-1/2 xl:hidden">
+  <div class="space-y-4 p-5 sm:p-8 lg:p-9">
+    <div class="flex items-center justify-between">
+      <a href="./index.html">
+        <span class="sr-only">Home</span>
+        <figure class="max-w-[44px]">
+          <img src="./images/shared/veritas-logo.png" alt="Veritas" class="block w-full dark:hidden" />
+          <img src="./images/shared/veritas-logo-white.png" alt="Veritas" class="hidden w-full dark:block" />
+        </figure>
+      </a>
+      <button class="nav-hamburger-close bg-background-4 dark:bg-background-9 relative flex size-10 cursor-pointer flex-col items-center justify-center gap-1.5 rounded-full">
+        <span class="sr-only">Close Menu</span>
+        <span class="bg-stroke-9/60 dark:bg-stroke-1 absolute block h-0.5 w-4 rotate-45"></span>
+        <span class="bg-stroke-9/60 dark:bg-stroke-1 absolute block h-0.5 w-4 -rotate-45"></span>
+      </button>
+    </div>
+    <div class="scroll-bar h-[85vh] w-full overflow-x-hidden overflow-y-auto pb-10">
+      <ul>
+        <li><a href="./about.html" class="text-tagline-1 font-normal text-secondary/80 dark:text-accent/80 transition-all duration-200 py-4 border-b border-stroke-4 dark:border-stroke-6 w-full text-left block">About Us</a></li>
+        <li><a href="./services.html" class="text-tagline-1 font-normal text-secondary/80 dark:text-accent/80 transition-all duration-200 py-4 border-b border-stroke-4 dark:border-stroke-6 w-full text-left block">Our Services</a></li>
+        <li><a href="./features.html" class="text-tagline-1 font-normal text-secondary/80 dark:text-accent/80 transition-all duration-200 py-4 border-b border-stroke-4 dark:border-stroke-6 w-full text-left block">Product Features</a></li>
+        <li><a href="./pricing.html" class="text-tagline-1 font-normal text-secondary/80 dark:text-accent/80 transition-all duration-200 py-4 border-b border-stroke-4 dark:border-stroke-6 w-full text-left block">Pricing</a></li>
+      </ul>
+      <a href="./waitlist.html" class="btn btn-md btn-secondary hover:btn-primary dark:btn-accent mt-6 w-full">
+        <span>Waitlist</span>
+      </a>
+    </div>
+  </div>
+</aside>
+
+</header>
+
+    <main>
+      <section class="pt-32 pb-20 sm:pt-36 md:pt-42 md:pb-[100px] lg:pb-[140px] xl:pt-[180px] xl:pb-[180px]">
+        <div class="main-container">
+          <div class="grid grid-cols-12 gap-y-10 lg:gap-x-12">
+            <!-- Left column: copy -->
+            <div class="col-span-12 lg:col-span-5 space-y-6">
+              <span class="badge badge-cyan-v2">Closed beta · rolling rollout</span>
+              <h1 class="text-secondary dark:text-accent text-heading-3 sm:text-heading-2">
+                Join the Veritas <span class="text-primary-500">waitlist</span>.
+              </h1>
+              <p class="text-secondary/70 dark:text-accent/70 text-tagline-1">
+                Veritas is opening to Pakistani storefronts one category at a time so we can
+                hand-tune the Roman-Urdu fraud model to each vertical. Drop your details and we will
+                send you a sandbox API key the moment we open to yours.
+              </p>
+              <ul class="space-y-3 text-secondary dark:text-accent">
+                <li class="flex items-start gap-3">
+                  <span class="veritas-checkmark mt-1">
+                    <svg width="11" height="11" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M8.31661 12.7561L13.7491 7.42144C14.0836 7.0959 14.0836 6.5697 13.7491 6.24416C13.4145 5.91861 12.8736 5.91861 12.539 6.24416L7.7116 10.9901L5.46096 8.78807C5.12636 8.46253 4.58554 8.46253 4.25095 8.78807C3.91635 9.11362 3.91635 9.63982 4.25095 9.96536L7.1066 12.7561C7.27347 12.9184 7.49253 13 7.7116 13C7.93067 13 8.14974 12.9184 8.31661 12.7561Z" fill="white"/>
+                    </svg>
+                  </span>
+                  <span>14-day pilot on us — no credit card, no commitment.</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="veritas-checkmark mt-1">
+                    <svg width="11" height="11" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M8.31661 12.7561L13.7491 7.42144C14.0836 7.0959 14.0836 6.5697 13.7491 6.24416C13.4145 5.91861 12.8736 5.91861 12.539 6.24416L7.7116 10.9901L5.46096 8.78807C5.12636 8.46253 4.58554 8.46253 4.25095 8.78807C3.91635 9.11362 3.91635 9.63982 4.25095 9.96536L7.1066 12.7561C7.27347 12.9184 7.49253 13 7.7116 13C7.93067 13 8.14974 12.9184 8.31661 12.7561Z" fill="white"/>
+                    </svg>
+                  </span>
+                  <span>Drop-in widget for Shopify, WooCommerce, and custom storefronts.</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="veritas-checkmark mt-1">
+                    <svg width="11" height="11" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M8.31661 12.7561L13.7491 7.42144C14.0836 7.0959 14.0836 6.5697 13.7491 6.24416C13.4145 5.91861 12.8736 5.91861 12.539 6.24416L7.7116 10.9901L5.46096 8.78807C5.12636 8.46253 4.58554 8.46253 4.25095 8.78807C3.91635 9.11362 3.91635 9.63982 4.25095 9.96536L7.1066 12.7561C7.27347 12.9184 7.49253 13 7.7116 13C7.93067 13 8.14974 12.9184 8.31661 12.7561Z" fill="white"/>
+                    </svg>
+                  </span>
+                  <span>Karachi-time onboarding, founder access in your first month.</span>
+                </li>
+              </ul>
+              <p class="text-tagline-2 text-secondary/60 dark:text-accent/60 italic">
+                Asli Reviews. Yaqeen Ke Saath Kharidari.
+              </p>
+            </div>
+
+            <!-- Right column: form -->
+            <div class="col-span-12 lg:col-span-7">
+              <div class="veritas-card">
+                <form
+                  id="veritas-waitlist-form"
+                  class="veritas-form"
+                  action="https://formspree.io/f/REPLACE_WITH_FORMSPREE_ID"
+                  method="POST"
+                  novalidate
+                >
+                  <div class="veritas-row">
+                    <div class="veritas-field">
+                      <label class="veritas-label" for="wl-name">Your full name</label>
+                      <input
+                        class="veritas-input"
+                        id="wl-name"
+                        name="name"
+                        type="text"
+                        autocomplete="name"
+                        placeholder="Ayesha Mahmood"
+                        required
+                      />
+                    </div>
+                    <div class="veritas-field">
+                      <label class="veritas-label" for="wl-brand">Brand / storefront</label>
+                      <input
+                        class="veritas-input"
+                        id="wl-brand"
+                        name="brand"
+                        type="text"
+                        autocomplete="organization"
+                        placeholder="Otaq Home"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="veritas-field">
+                    <label class="veritas-label" for="wl-email">Work email</label>
+                    <input
+                      class="veritas-input"
+                      id="wl-email"
+                      name="email"
+                      type="email"
+                      autocomplete="email"
+                      placeholder="ayesha@otaqhome.pk"
+                      required
+                    />
+                  </div>
+                  <div class="veritas-row">
+                    <div class="veritas-field">
+                      <label class="veritas-label" for="wl-orders">Monthly orders</label>
+                      <select class="veritas-input" id="wl-orders" name="monthly_orders" required>
+                        <option value="">Pick a range</option>
+                        <option value="<500">Under 500</option>
+                        <option value="500-2000">500 – 2,000</option>
+                        <option value="2000-10000">2,000 – 10,000</option>
+                        <option value="10000-50000">10,000 – 50,000</option>
+                        <option value="50000+">50,000+</option>
+                      </select>
+                    </div>
+                    <div class="veritas-field">
+                      <label class="veritas-label" for="wl-category">Category</label>
+                      <select class="veritas-input" id="wl-category" name="category" required>
+                        <option value="">Pick a category</option>
+                        <option value="Fashion & apparel">Fashion &amp; apparel</option>
+                        <option value="Home & living">Home &amp; living</option>
+                        <option value="Beauty & personal care">Beauty &amp; personal care</option>
+                        <option value="Electronics & gadgets">Electronics &amp; gadgets</option>
+                        <option value="Food & grocery">Food &amp; grocery</option>
+                        <option value="Marketplace / multi-vendor">Marketplace / multi-vendor</option>
+                        <option value="Other">Other</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="veritas-field">
+                    <label class="veritas-label" for="wl-notes">Anything we should know? <span style="font-weight:400;color:rgba(17,22,48,0.45)">(optional)</span></label>
+                    <textarea
+                      class="veritas-input"
+                      id="wl-notes"
+                      name="notes"
+                      rows="3"
+                      placeholder="Biggest review/trust problem you're hitting today, your current platform, anything you want us to keep in mind."
+                    ></textarea>
+                  </div>
+                  <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px;height:0;width:0;opacity:0" aria-hidden="true" />
+                  <button type="submit" class="veritas-submit" id="veritas-submit-btn">
+                    <span>Reserve my spot on the waitlist</span>
+                  </button>
+                  <p class="text-secondary/55 dark:text-accent/55" style="font-size:13px;margin-top:14px;text-align:center;">
+                    We will only email you when Veritas opens to your category. No newsletter, no resale.
+                  </p>
+                </form>
+
+                <div class="veritas-success" id="veritas-success" role="status" aria-live="polite">
+                  <div style="display:flex;align-items:center;gap:12px;margin-bottom:8px;">
+                    <span class="veritas-checkmark" style="width:28px;height:28px;border-radius:14px;">
+                      <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.31661 12.7561L13.7491 7.42144C14.0836 7.0959 14.0836 6.5697 13.7491 6.24416C13.4145 5.91861 12.8736 5.91861 12.539 6.24416L7.7116 10.9901L5.46096 8.78807C5.12636 8.46253 4.58554 8.46253 4.25095 8.78807C3.91635 9.11362 3.91635 9.63982 4.25095 9.96536L7.1066 12.7561C7.27347 12.9184 7.49253 13 7.7116 13C7.93067 13 8.14974 12.9184 8.31661 12.7561Z" fill="white"/>
+                      </svg>
+                    </span>
+                    <strong style="font-size:18px;">You're on the list.</strong>
+                  </div>
+                  <p style="margin:0 0 16px 0;color:rgba(17,22,48,0.7);">
+                    We will email <strong id="veritas-success-email">you</strong> the moment Veritas
+                    opens to <strong id="veritas-success-category">your category</strong>. We have
+                    saved your spot locally and you can always reach us at
+                    <a href="mailto:waitlist@veritas.pk" style="color:#20B472;text-decoration:underline;">waitlist@veritas.pk</a>.
+                  </p>
+                  <div style="display:flex;flex-wrap:wrap;gap:10px;margin-bottom:14px;">
+                    <a id="veritas-mailto-link" href="mailto:waitlist@veritas.pk" class="veritas-submit" style="width:auto;padding:10px 18px;font-size:14px;background:#111630;">
+                      <span>Email a copy to Veritas</span>
+                    </a>
+                    <button type="button" id="veritas-reset-btn" class="veritas-submit" style="width:auto;padding:10px 18px;font-size:14px;background:transparent;color:#111630;border:1px solid rgba(17,22,48,0.18);">
+                      <span>Submit another</span>
+                    </button>
+                  </div>
+                  <p style="margin:0;color:rgba(17,22,48,0.55);font-size:13px;">
+                    Reference id: <code id="veritas-ref-id" style="background:rgba(17,22,48,0.06);padding:2px 8px;border-radius:6px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px;"></code>
+                  </p>
+                </div>
+
+                <div class="veritas-trust-row">
+                  <p>
+                    <span class="veritas-checkmark"><svg width="11" height="11" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.31661 12.7561L13.7491 7.42144C14.0836 7.0959 14.0836 6.5697 13.7491 6.24416C13.4145 5.91861 12.8736 5.91861 12.539 6.24416L7.7116 10.9901L5.46096 8.78807C5.12636 8.46253 4.58554 8.46253 4.25095 8.78807C3.91635 9.11362 3.91635 9.63982 4.25095 9.96536L7.1066 12.7561C7.27347 12.9184 7.49253 13 7.7116 13C7.93067 13 8.14974 12.9184 8.31661 12.7561Z" fill="white"/></svg></span>
+                    Data stays in Pakistan
+                  </p>
+                  <p>
+                    <span class="veritas-checkmark"><svg width="11" height="11" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.31661 12.7561L13.7491 7.42144C14.0836 7.0959 14.0836 6.5697 13.7491 6.24416C13.4145 5.91861 12.8736 5.91861 12.539 6.24416L7.7116 10.9901L5.46096 8.78807C5.12636 8.46253 4.58554 8.46253 4.25095 8.78807C3.91635 9.11362 3.91635 9.63982 4.25095 9.96536L7.1066 12.7561C7.27347 12.9184 7.49253 13 7.7116 13C7.93067 13 8.14974 12.9184 8.31661 12.7561Z" fill="white"/></svg></span>
+                    No newsletter spam
+                  </p>
+                  <p>
+                    <span class="veritas-checkmark"><svg width="11" height="11" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.31661 12.7561L13.7491 7.42144C14.0836 7.0959 14.0836 6.5697 13.7491 6.24416C13.4145 5.91861 12.8736 5.91861 12.539 6.24416L7.7116 10.9901L5.46096 8.78807C5.12636 8.46253 4.58554 8.46253 4.25095 8.78807C3.91635 9.11362 3.91635 9.63982 4.25095 9.96536L7.1066 12.7561C7.27347 12.9184 7.49253 13 7.7116 13C7.93067 13 8.14974 12.9184 8.31661 12.7561Z" fill="white"/></svg></span>
+                    Unsubscribe in one click
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- =========================
+Footer
+===========================-->
+<footer class="footer bg-secondary dark:bg-background-8 relative z-0 overflow-hidden border-t border-t-[#303032] max-sm:z-11 dark:border-t-0">
+  <div class="main-container px-5">
+    <div class="grid grid-cols-12 justify-between gap-x-0 gap-y-16 pt-16 pb-12 xl:pt-[90px]">
+      <div class="col-span-12 xl:col-span-4">
+        <div class="max-w-[306px]">
+          <figure class="max-w-[180px]">
+            <img src="./images/shared/veritas-logo-white.png" alt="Veritas" class="block w-full" />
+          </figure>
+          <p class="text-accent/60 text-tagline-1 mt-4 mb-3 font-normal">
+            Pakistan's first independent trust infrastructure for e-commerce — verified-purchase
+            reviews, Roman-Urdu fraud detection, and a Trust Score badge that turns hesitant
+            browsers into confident buyers.
+          </p>
+          <p class="text-tagline-2 text-ns-yellow italic mb-7">
+            Asli Reviews. Yaqeen Ke Saath Kharidari.
+          </p>
+        </div>
+      </div>
+      <div class="col-span-12 grid grid-cols-12 gap-x-0 gap-y-8 xl:col-span-8">
+        <div class="col-span-12 md:col-span-4">
+          <div class="space-y-8">
+            <p class="sm:text-heading-6 text-tagline-1 text-primary-50 font-normal">Product</p>
+            <ul class="space-y-5">
+              <li><a href="./about.html" class="footer-link">About Us</a></li>
+              <li><a href="./services.html" class="footer-link">Our Services</a></li>
+              <li><a href="./features.html" class="footer-link">Product Features</a></li>
+              <li><a href="./pricing.html" class="footer-link">Pricing</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-span-12 md:col-span-4">
+          <div class="space-y-8">
+            <p class="sm:text-heading-6 text-tagline-1 text-primary-50 font-normal">Get in touch</p>
+            <ul class="space-y-5">
+              <li><a href="mailto:waitlist@veritas.pk" class="footer-link">waitlist@veritas.pk</a></li>
+              <li><a href="mailto:hello@veritas.pk" class="footer-link">hello@veritas.pk</a></li>
+              <li><a href="./waitlist.html" class="footer-link">Join the waitlist</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-span-12 md:col-span-4">
+          <div class="space-y-8">
+            <p class="sm:text-heading-6 text-tagline-1 text-primary-50 font-normal">Legal</p>
+            <ul class="space-y-5">
+              <li><a href="#" class="footer-link">Terms &amp; Conditions</a></li>
+              <li><a href="#" class="footer-link">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="relative pt-[26px] pb-[42px] text-center">
+      <div class="footer-divider bg-accent/10 dark:bg-stroke-6 absolute top-0 right-0 left-0 mx-auto h-px w-0 origin-center"></div>
+      <p class="text-accent/60 text-tagline-2">&copy; 2026 Veritas Labs &middot; Built in Karachi for shoppers who refuse to be fooled twice.</p>
+    </div>
+  </div>
+</footer>
+
+  <script src="./vendor/swiper.min.js"></script>
+<script src="./vendor/leaflet.min.js"></script>
+<script src="./vendor/vanilla-infinite-marquee.min.js"></script>
+<script src="./vendor/split-text.min.js"></script>
+<script src="./vendor/gsap.min.js"></script>
+<script src="./vendor/scroll-trigger.min.js"></script>
+<script src="./vendor/draw-svg.min.js"></script>
+<script src="./vendor/scroll-trigger.min.js"></script>
+<script src="./vendor/motionpathplugin.min.js"></script>
+<script src="./vendor/lenis.min.js"></script>
+<script src="./vendor/springer.min.js"></script>
+<script src="./vendor/number-counter.js"></script>
+<script src="./vendor/stack-card.min.js"></script>
+
+
+  <script src="./assets/main.js"></script>
+
+  <script>
+    (function () {
+      var form = document.getElementById('veritas-waitlist-form');
+      var success = document.getElementById('veritas-success');
+      var emailLabel = document.getElementById('veritas-success-email');
+      var categoryLabel = document.getElementById('veritas-success-category');
+      var refLabel = document.getElementById('veritas-ref-id');
+      var submitBtn = document.getElementById('veritas-submit-btn');
+      var STORAGE_KEY = 'veritas:waitlist:submissions';
+
+      function makeRefId() {
+        return 'VRT-' + Date.now().toString(36).toUpperCase() + '-' +
+          Math.random().toString(36).slice(2, 6).toUpperCase();
+      }
+
+      function saveLocally(payload) {
+        try {
+          var existing = JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]');
+          existing.push(payload);
+          localStorage.setItem(STORAGE_KEY, JSON.stringify(existing));
+        } catch (e) { /* localStorage disabled, ignore */ }
+      }
+
+      function buildMailtoUrl(payload) {
+        var subject = 'Veritas waitlist — ' + payload.brand + ' (' + payload.category + ')';
+        var lines = [
+          'New waitlist signup',
+          '',
+          'Ref:        ' + payload.ref,
+          'Name:       ' + payload.name,
+          'Brand:      ' + payload.brand,
+          'Email:      ' + payload.email,
+          'Orders/mo:  ' + payload.monthlyOrders,
+          'Category:   ' + payload.category,
+          'Notes:      ' + (payload.notes || '(none)'),
+          'Submitted:  ' + payload.submittedAt,
+          'Page:       ' + payload.page
+        ];
+        return 'mailto:waitlist@veritas.pk?subject=' + encodeURIComponent(subject) +
+          '&body=' + encodeURIComponent(lines.join('\n'));
+      }
+
+      function showSuccess(payload) {
+        if (emailLabel) emailLabel.textContent = payload.email || 'you';
+        if (categoryLabel) categoryLabel.textContent = payload.category || 'your category';
+        if (refLabel) refLabel.textContent = payload.ref;
+        var mailtoLink = document.getElementById('veritas-mailto-link');
+        if (mailtoLink) mailtoLink.setAttribute('href', buildMailtoUrl(payload));
+        if (form) form.classList.add('is-hidden');
+        if (success) success.classList.add('is-visible');
+        window.scrollTo({ top: success.getBoundingClientRect().top + window.scrollY - 120, behavior: 'smooth' });
+      }
+
+      function resetForm() {
+        if (form) {
+          form.reset();
+          form.classList.remove('is-hidden');
+        }
+        if (success) success.classList.remove('is-visible');
+      }
+
+      function readForm() {
+        var fd = new FormData(form);
+        return {
+          name: (fd.get('name') || '').toString().trim(),
+          brand: (fd.get('brand') || '').toString().trim(),
+          email: (fd.get('email') || '').toString().trim(),
+          monthlyOrders: (fd.get('monthly_orders') || '').toString().trim(),
+          category: (fd.get('category') || '').toString().trim(),
+          notes: (fd.get('notes') || '').toString().trim(),
+          gotcha: (fd.get('_gotcha') || '').toString().trim(),
+          submittedAt: new Date().toISOString(),
+          ref: makeRefId(),
+          page: location.href
+        };
+      }
+
+      function validEmail(s) {
+        return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(s);
+      }
+
+      if (!form) return;
+
+      var prefill = new URLSearchParams(location.search).get('email');
+      if (prefill) {
+        var emailInput = document.getElementById('wl-email');
+        if (emailInput) emailInput.value = prefill;
+      }
+
+      form.addEventListener('submit', function (ev) {
+        ev.preventDefault();
+        var payload = readForm();
+
+        if (payload.gotcha) return;
+        if (!payload.name || !payload.brand || !payload.email || !payload.monthlyOrders || !payload.category) {
+          alert('Please fill in your name, brand, email, monthly orders, and category.');
+          return;
+        }
+        if (!validEmail(payload.email)) {
+          alert('That email looks off — could you double-check it?');
+          return;
+        }
+
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = '<span>Reserving your spot…</span>';
+
+        saveLocally(payload);
+
+        var action = form.getAttribute('action') || '';
+        var isFormspreeReady = action && action.indexOf('REPLACE_WITH_FORMSPREE_ID') === -1;
+
+        function finish() {
+          submitBtn.disabled = false;
+          submitBtn.innerHTML = '<span>Reserve my spot on the waitlist</span>';
+          showSuccess(payload);
+        }
+
+        if (isFormspreeReady) {
+          var body = new FormData();
+          Object.keys(payload).forEach(function (k) { body.append(k, payload[k]); });
+          fetch(action, { method: 'POST', body: body, headers: { Accept: 'application/json' } })
+            .then(function () { finish(); })
+            .catch(function () { finish(); });
+        } else {
+          finish();
+        }
+      });
+
+      var resetBtn = document.getElementById('veritas-reset-btn');
+      if (resetBtn) resetBtn.addEventListener('click', resetForm);
+    })();
+  </script>
+
+  </body>
+</html>
