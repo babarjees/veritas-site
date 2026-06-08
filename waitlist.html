@@ -205,12 +205,13 @@ Header v1
     <div>
       <a href="./">
         <span class="sr-only">Home</span>
-        <figure class="hidden lg:block lg:max-w-[198px]">
-          <img src="./images/shared/veritas-logo-white.png" alt="Veritas" class="dark:invert" />
+        <figure class="hidden lg:block lg:max-w-[170px]">
+          <img src="./images/shared/veritas-logo.png" alt="Veritas" class="dark:hidden" />
+          <img src="./images/shared/veritas-logo-white.png" alt="Veritas" class="hidden dark:block" />
         </figure>
         <figure class="block max-w-[44px] lg:hidden">
           <img src="./images/shared/veritas-logo.png" alt="Veritas" class="block w-full dark:hidden" />
-          <img src="./images/shared/veritas-logo.png" alt="Veritas" class="hidden w-full dark:block" />
+          <img src="./images/shared/veritas-logo-white.png" alt="Veritas" class="hidden w-full dark:block" />
         </figure>
       </a>
     </div>
@@ -484,58 +485,28 @@ Footer
 ===========================-->
 <footer class="footer bg-secondary dark:bg-background-8 relative z-0 overflow-hidden border-t border-t-[#303032] max-sm:z-11 dark:border-t-0">
   <div class="main-container px-5">
-    <div class="grid grid-cols-12 justify-between gap-x-0 gap-y-16 pt-16 pb-12 xl:pt-[90px]">
-      <div class="col-span-12 xl:col-span-4">
-        <div class="max-w-[306px]">
-          <figure class="max-w-[180px]">
-            <img src="./images/shared/veritas-logo-white.png" alt="Veritas" class="block w-full" />
-          </figure>
-          <p class="text-accent/60 text-tagline-1 mt-4 mb-3 font-normal">
-            Pakistan's first independent trust infrastructure for e-commerce — verified-purchase
-            reviews, Roman-Urdu fraud detection, and a Trust Score badge that turns hesitant
-            browsers into confident buyers.
-          </p>
-          <p class="text-tagline-2 text-ns-yellow italic mb-7">
-            Asli Reviews. Yaqeen Ke Saath Kharidari.
-          </p>
-        </div>
+    <div class="grid grid-cols-12 gap-x-0 gap-y-10 pt-16 pb-10 lg:pt-20 lg:pb-12 items-center">
+      <div class="col-span-12 md:col-span-7">
+        <figure class="max-w-[180px]" style="max-width: 180px;">
+          <img src="./images/shared/veritas-logo-white.png" alt="Veritas" class="block w-full" />
+        </figure>
+        <p class="text-accent/60 text-tagline-1 mt-5 font-normal" style="max-width: 480px;">
+          Pakistan's first independent trust infrastructure for e-commerce &mdash; verified-purchase reviews, Roman-Urdu fraud detection, and a Trust Score badge that turns hesitant browsers into confident buyers.
+        </p>
+        <p class="text-tagline-2 text-ns-yellow italic mt-4">
+          Asli Reviews. Yaqeen Ke Saath Kharidari.
+        </p>
       </div>
-      <div class="col-span-12 grid grid-cols-12 gap-x-0 gap-y-8 xl:col-span-8">
-        <div class="col-span-12 md:col-span-4">
-          <div class="space-y-8">
-            <p class="sm:text-heading-6 text-tagline-1 text-primary-50 font-normal">Product</p>
-            <ul class="space-y-5">
-              <li><a href="./about.html" class="footer-link">About Us</a></li>
-              <li><a href="./services.html" class="footer-link">Our Services</a></li>
-              <li><a href="./features.html" class="footer-link">Product Features</a></li>
-              <li><a href="./pricing.html" class="footer-link">Pricing</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-span-12 md:col-span-4">
-          <div class="space-y-8">
-            <p class="sm:text-heading-6 text-tagline-1 text-primary-50 font-normal">Get in touch</p>
-            <ul class="space-y-5">
-              <li><a href="mailto:waitlist@veritas.pk" class="footer-link">waitlist@veritas.pk</a></li>
-              <li><a href="mailto:hello@veritas.pk" class="footer-link">hello@veritas.pk</a></li>
-              <li><a href="./waitlist.html" class="footer-link">Join the waitlist</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-span-12 md:col-span-4">
-          <div class="space-y-8">
-            <p class="sm:text-heading-6 text-tagline-1 text-primary-50 font-normal">Legal</p>
-            <ul class="space-y-5">
-              <li><a href="#" class="footer-link">Terms &amp; Conditions</a></li>
-              <li><a href="#" class="footer-link">Privacy Policy</a></li>
-            </ul>
-          </div>
-        </div>
+      <div class="col-span-12 md:col-span-5 flex md:justify-end items-center">
+        <a href="./waitlist.html" class="btn btn-md btn-primary hover:btn-white dark:btn-accent">
+          <span>Join the waitlist</span>
+        </a>
       </div>
     </div>
-    <div class="relative pt-[26px] pb-[42px] text-center">
-      <div class="footer-divider bg-accent/10 dark:bg-stroke-6 absolute top-0 right-0 left-0 mx-auto h-px w-0 origin-center"></div>
-      <p class="text-accent/60 text-tagline-2">&copy; 2026 Veritas Labs &middot; Built in Karachi for shoppers who refuse to be fooled twice.</p>
+    <div class="border-t border-accent/10 dark:border-stroke-6 pt-6 pb-10 text-center">
+      <p class="text-tagline-2 text-accent/55 font-normal">
+        &copy; 2026 Veritas Labs &middot; Built in Karachi for shoppers who refuse to be fooled twice.
+      </p>
     </div>
   </div>
 </footer>
